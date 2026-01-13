@@ -1,4 +1,18 @@
-.box{
-    border: 2px solid black;
-    width: 200px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: white;
+}
+
+#tauler {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+    gap: 12px;
+}
+.casella {
+    background-color: white;
+    border: 2px solid #000;
 }
