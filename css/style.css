@@ -1,18 +1,47 @@
 body{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    background-color: #577;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+#game .cell {
+    width: 90px;
+    height: 90px;
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid purple;
+    float: left;
 }
 
-#tauler {
-    display: grid;
-    grid-template-columns: repeat(3, 130px);
-    grid-template-rows: repeat(3, 130px);
-    gap: 12px;
+#game {
+    width: 276px;
+    text-align: center;
 }
-.casella {
+
+#results {
+    position: relative;
+    top: 10px;
+    height: 1rem;
+}
+
+.controls {
+    margin-top: 30px;
+}
+
+#reiniciar {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
     background-color: white;
-    border: 2px solid #000;
+    color: blueviolet;
+    cursor: pointer;
 }
